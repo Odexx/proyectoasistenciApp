@@ -38,5 +38,5 @@ def login(request):
                      "rol": user.rol,
                      "foto": user.foto,
                      "telefono": user.telefono,
-                     "careera": user.careera,
+                     "careera": user.carreera,
                      "perfil": user.perfil, })
