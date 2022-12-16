@@ -4,7 +4,7 @@ from rest_framework import status
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from .models import  Asistencia, User, Asignatura
+from .models import Asistencia, User, Asignatura
 from rest_framework import viewsets, permissions
 
 
@@ -34,4 +34,9 @@ def login(request):
                     id_name: user.id,
                      "nombre": user.first_name,
                      "apellido": user.last_name,
-                     "tipo": user.tipo})
+                     "tipo": user.tipo,
+                     "rol": user.rol,
+                     "foto": user.foto,
+                     "telefono": user.telefono,
+                     "careera": user.careera,
+                     "perfil": user.perfil, })
